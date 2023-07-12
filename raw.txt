@@ -8,3 +8,202 @@
 </div>
 
 //JSX Immediately invoked function
+function App() {
+  let marks =77;
+  return (
+    <div>
+
+{(()=>{
+
+if(marks>80 && marks<100){
+  return <h1>A+</h1>
+}
+if(marks>70 && marks<80){
+  return <h1>B+</h1>
+}
+if(marks>60 && marks<70){
+  return <h1>C+</h1>
+}
+
+})()}
+
+
+
+
+//loop inside the
+function App() {
+  const city = ["uyg", "iug", "iugdd", "fyyiu"];
+  return (
+    <div>
+      <ul>
+        {city.map((item, i) => {
+          return <li key={i.toString()}>{item}</li>;
+        })}
+      </ul>
+    </div>
+  );
+}
+
+
+
+
+
+
+
+
+
+//13 JSX Conditional Rendering Using If Else
+const LoginStatusBtn = (status) => {
+  if (status) {
+    return <button>Logout BTN</button>;
+  } else {
+    return <button> Login BTN</button>;
+  }
+};
+
+const App = () => {
+  return (
+    <div>
+      <h1>Login Status</h1>
+      {LoginStatusBtn(false)}
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+
+
+
+// JSX Conditional Rendering Using Switch Statement
+const LoginStatusBtn = ({ status }) => {
+  const renderButton = () => {
+    switch (status) {
+      case true:
+        return <button>Logout BTN</button>;
+      case false:
+        return <button>Login BTN</button>;
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div>
+      <h1>Login Status</h1>
+      {renderButton()}
+    </div>
+  );
+};
+
+const App = () => {
+  return <LoginStatusBtn status={true} />;
+};
+
+export default App;
+
+
+
+
+//19 Passing simple string to child component
+import Hero from "./component/hero";
+
+const App = () => {
+  return (
+    <div>
+      <Hero title="learn react" des="descriptipn" />
+    </div>
+  );
+};
+
+export default App;
+>>
+const Hero = (props) => {
+  return (
+    <>
+      <div>
+        <h1>{props.title}</h1>
+        <h2>{props.des}</h2>
+      </div>
+    </>
+  );
+};
+
+export default Hero;
+
+
+
+
+//20 Passing object to child component
+import Hero from "./component/hero";
+
+const App = () => {
+  const itemObject = {
+    name: "Mahbub",
+    age: 23,
+    city: "comilla",
+  };
+
+  return (
+    <div>
+      <Hero item={itemObject} />
+    </div>
+  );
+};
+
+export default App;
+
+>>
+
+/* eslint-disable react/prop-types */
+const Hero = (props) => {
+  return (
+    <>
+      <div>
+        <ul>
+          <li>Name:{props.item["name"]}</li>
+          <li>age:{props.item["age"]}</li>
+        </ul>
+      </div>
+    </>
+  );
+};
+
+export default Hero;
+
+
+
+
+//21 Passing function to child component
+import Hero from "./component/hero";
+
+const App = () => {
+  const btnClick = () => {
+    alert("say hello");
+  };
+
+  return (
+    <div>
+      <h1>sdfdsf</h1>
+      <Hero childBtnClick={btnClick} />
+    </div>
+  );
+};
+
+export default App;
+
+
+const Hero = () => {
+  return (
+    <div>
+      <button onClick={props.childBtnClick}>submit</button>
+    </div>
+  );
+};
+
+export default Hero;
+
+
