@@ -1,0 +1,10 @@
+// short hand if else if
+<div>
+{
+    marks > 80 ? <h1>brilliant</h1> 
+    : 
+    <h1>avarage result</h1>
+}
+</div>
+
+//JSX Immediately invoked function
