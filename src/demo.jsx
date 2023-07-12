@@ -1,12 +1,11 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
-
-const demo = () => {
+const Demo = () => {
   return (
-    <div>
-      <h1> react div demo</h1>
-    </div>
+    <>
+      <div>
+        <h1>im demo</h1>
+      </div>
+    </>
   );
 };
 
-export default demo;
+export default Demo;

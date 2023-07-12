@@ -1,21 +1,17 @@
-// eslint-disable-next-line no-unused-vars
-import { useState } from "react";
-// eslint-disable-next-line no-unused-vars
-import reactLogo from "./assets/react.svg";
-// eslint-disable-next-line no-unused-vars
-import viteLogo from "/vite.svg";
-import "./App.css";
-// eslint-disable-next-line no-unused-vars
-import demo from "./demo";
+import Headers from "./component/Headers";
+import ContactForm from "./component/contactForm";
+import Footer from "./component/footer";
+import Hero from "./component/hero";
 
 function App() {
   return (
     <>
       <div>
-        <h1>fsdfsdf</h1>
+        <Headers />
+        <Hero />
+        <ContactForm />
+        <Footer />
       </div>
-      <demo />
-      <h1>my app react</h1>
     </>
   );
 }
