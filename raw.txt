@@ -207,3 +207,41 @@ const Hero = () => {
 export default Hero;
 
 
+
+
+//24 react hook
+
+import React, { useState, useEffect, useContext, useRef } from 'react';
+
+const ExampleComponent = () => {
+  // useState: manages state in functional components
+  const [count, setCount] = useState(0);
+
+  // useEffect: performs side effects in functional components
+  useEffect(() => {
+    document.title = `Count: ${count}`;
+  }, [count]);
+
+  // useContext: accesses values from a React context
+  const theme = useContext(ThemeContext);
+
+  // useRef: creates a mutable reference
+  const inputRef = useRef(null);
+
+  // Custom hooks: You can also create your own custom hooks to reuse logic
+
+  // Event handler for button click
+  const handleButtonClick = () => {
+    setCount(prevCount => prevCount + 1);
+  };
+
+  return (
+    <div>
+      <h1 style={{ color: theme }}>Count: {count}</h1>
+      <input type="text" ref={inputRef} />
+      <button onClick={handleButtonClick}>Increment</button>
+    </div>
+  );
+};
+
+export default ExampleComponent;
