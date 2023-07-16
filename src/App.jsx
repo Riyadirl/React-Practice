@@ -1,7 +1,9 @@
+import Testing from "./component/Testing";
+
 const App = () => {
   return (
     <div>
-      <h1>fghfgh</h1>
+      <Testing />
     </div>
   );
 };
