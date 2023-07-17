@@ -17,7 +17,7 @@ const Testing = () => {
     </div>
   );
 
-*/
+
 
   // 26 useRef Working With Attribute
 
@@ -35,7 +35,33 @@ const Testing = () => {
       <button onClick={change}>click</button>
     </div>
   );
+ 
 
-  // 27 useRef Working With Form
+  // 27 useRef Working With Input Element
+
+  // Declare variables using destructuring assignment
+  let firstName,
+    lastName = useRef();
+  // Define the change function
+  const change = () => {
+    let fname = firstName.value; // Get the value of the firstName input
+    let lname = lastName.value; // Get the value of the lastName input
+
+    alert(fname + " " + lname); // Display an alert with the concatenated values
+  };
+
+  return (
+    <div>
+      <input
+        ref={(a) => (firstName = a)}
+        type="text"
+        placeholder="First Name"
+      />
+      <br></br>
+      <input ref={(b) => (lastName = b)} type="text" placeholder="Last Name" />
+      <br></br>
+      <button onClick={change}>click</button>
+    </div>
+  ); */
 };
 export default Testing;
