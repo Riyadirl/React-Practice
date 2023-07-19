@@ -63,5 +63,22 @@ const Testing = () => {
       <button onClick={change}>click</button>
     </div>
   ); */
+  //useRef Working With CSS Class
+
+  let myHeadLine = useRef();
+
+  const change = () => {
+    myHeadLine.current.classList.remove("text-success");
+    myHeadLine.current.classList.add("text-danger");
+  };
+
+  retur(
+    <div>
+      <h1 className="text-success" ref={myHeadLine}>
+        fdgfdgdf
+      </h1>
+      <button onClick={change}>click</button>
+    </div>
+  );
 };
 export default Testing;
