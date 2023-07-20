@@ -1,9 +1,9 @@
-import Testing from "./component/Testing";
+import UseStat from "./component/UseStat";
 
 const App = () => {
   return (
     <div>
-      <Testing />
+      <UseStat />
     </div>
   );
 };

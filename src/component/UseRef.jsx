@@ -62,7 +62,10 @@ const Testing = () => {
       <br></br>
       <button onClick={change}>click</button>
     </div>
-  ); */
+  ); 
+
+
+
   //useRef Working With CSS Class
 
   let myHeadLine = useRef();
@@ -72,7 +75,7 @@ const Testing = () => {
     myHeadLine.current.classList.add("text-danger");
   };
 
-  retur(
+  return (
     <div>
       <h1 className="text-success" ref={myHeadLine}>
         fdgfdgdf
@@ -80,5 +83,47 @@ const Testing = () => {
       <button onClick={change}>click</button>
     </div>
   );
+
+  //useRef Working With Persisted Mutable Property
+
+
+  let number = useRef(0);
+
+  const change = () => {
+    number.current++;
+    console.log(number.current);
+  };
+
+  return (
+    <div>
+      <button onClick={change}>click</button>
+    </div>
+  );
+
+  
+
+  //useRef Caching Expensive Computation
+
+  let apidata = useRef(null);
+  let mypTag = useRef();
+
+  const fetchData = async () => {
+    const response = await fetch("https://dummyjson.com/products/1");
+    apidata.current = await response.json();
+  };
+  const showData = () => {
+    mypTag.current.innerText = JSON.stringify(apidata.current);
+  };
+
+  return (
+    <div>
+      <p ref={mypTag}></p>
+      <button onClick={fetchData}>call api</button> <br />
+      <button onClick={showData}>show data</button>
+    </div>
+  );
+
+  */
+  //
 };
 export default Testing;
