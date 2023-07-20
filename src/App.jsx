@@ -1,9 +1,11 @@
-import UseStat from "./component/UseStat";
+//import UseStat from "./component/UseStat";
+
+import Live15 from "./component/LIve15";
 
 const App = () => {
   return (
     <div>
-      <UseStat />
+      <Live15 />
     </div>
   );
 };
