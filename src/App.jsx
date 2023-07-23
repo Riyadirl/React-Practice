@@ -1,11 +1,12 @@
 //import UseStat from "./component/UseStat";
 
-import Live15 from "./component/LIve15";
+import ContactForm from "./component/ContactForm";
+
 
 const App = () => {
   return (
     <div>
-      <Live15 />
+      <ContactForm />
     </div>
   );
 };
