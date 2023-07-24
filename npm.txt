@@ -1,0 +1,37 @@
+create vite >> npm create vite
+		
+	 Project name: ... vite-project
+	√ Select a framework: » React
+	√ Select a variant: » JavaScript
+
+cd vite-project
+node module >>  npm install
+run>>  npm run dev
+run>> npx vite
+
+build >> npm run build
+bootstrap>>  npm i bootstrap
+npm i bootstrap
+dom >> npm i react-router-dom
+
+
+extension>>
+Auto Import - ES6 & TS
+auto close
+Auto Rename Tag
+ESLint
+npm Intellisense
+Path Intellisense
+postman
+Reactjs code snippets
+Snipped
+Stylelint
+Tailwind CSS IntelliSense
+thunder client
+VSCode React Refactor
+
+
+VSCode icon
+
+
+

@@ -1,13 +1,16 @@
 //import UseStat from "./component/UseStat";
 
-import Headers from "./component/Headers";
+// Headers from "./component/Headers";
 import ContactForm from "./component/ContactForm";
 import Footer from "./component/Footer";
+import Nav from "./component/Nav";
+//import Nav from "./component/Nav";
 
 
 const App = () => {
   return (<div>
-    <Headers />
+    <Nav />
+
     <ContactForm />
     <Footer />
   </div>);
