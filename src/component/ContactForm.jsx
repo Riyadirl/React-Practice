@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ContactForm.css';
 
 const ContactForm = () => {
   // State to store form data, initially all fields are empty.

@@ -1,0 +1,50 @@
+/* CSS for Footer component */
+.footer-container {
+    background-color: #93BFCF;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-info h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.company-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-media h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-media li {
+    margin-right: 10px;
+}
+
+.social-media li:last-child {
+    margin-right: 0;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
